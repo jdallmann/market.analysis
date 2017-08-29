@@ -1,0 +1,18 @@
+---
+title: "Real Estate Clustering"
+author: "Justin Dallmann"
+date: "8/29/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+```{r fit}
+fit <- lm(sell.price ~ year.built + living.area.M2 + 
+              frontage.M + garage, data = reData)
+anova
+```
